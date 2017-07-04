@@ -42,10 +42,6 @@ class NewsType extends GraphQLType
                 'type' => Type::Int(),
                 'description' => 'The publish time of news'
             ],
-            'isIndex' => [
-                'type' => Type::Int(),
-                'description' => 'Whether the news is a headline or not'
-            ],
             'author' => [
                 'type' => GraphQL::type('User'),
                 'description' => 'The author of news'
