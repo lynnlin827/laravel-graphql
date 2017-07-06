@@ -5,7 +5,8 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=5.6.4",
+        "php": "~7.0.14",
+        "ext-pdo_sqlite": "*",
         "folklore/graphql": "^1.0",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0"
