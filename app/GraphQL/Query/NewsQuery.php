@@ -28,9 +28,9 @@ class NewsQuery extends Query
     public function resolve($root, $args)
     {
         if (isset($args['newsId'])) {
-            return News::where('newsId', $args['newsId'])->where('status', 4)->get();
+            return News::where('newsId', $args['newsId'])->where('posted', 1)->get();
         } else {
-            return News::where('status', 4)->get();
+            return News::where('posted', 1)->get();
         }
     }
 }

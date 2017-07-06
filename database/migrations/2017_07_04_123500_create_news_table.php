@@ -18,10 +18,11 @@ class CreateNewsTable extends Migration
             $table->string('title');
             $table->text('content');
             $table->string('summary');
+            $table->tinyInteger('posted')->default(0);
             $table->integer('userId')->unsigned();
-            $table->timestamp('createdAt');
-            $table->timestamp('updatedAt');
-            $table->timestamp('publishedAt');
+            $table->timestamp('createdAt')->useCurrent();
+            $table->timestamp('updatedAt')->useCurrent();
+            $table->timestamp('publishedAt')->nullable();
         });
     }
 

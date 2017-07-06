@@ -18,8 +18,8 @@ class CreateUsersTable extends Migration
             $table->string('code');
             $table->string('name');
             $table->string('signature');
-            $table->timestamp('createdAt');
-            $table->timestamp('updatedAt');
+            $table->timestamp('createdAt')->useCurrent();
+            $table->timestamp('updatedAt')->useCurrent();
         });
     }
 
