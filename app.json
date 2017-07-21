@@ -1,0 +1,6 @@
+{
+  "name": "Laravel GraphQL",
+  "description": "A GraphQL API system built with Laravel",
+  "repository": "https://github.com/lynn80827/laravel-graphql",
+  "keywords": ["laravel", "graphql"]
+}
