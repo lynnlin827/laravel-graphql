@@ -1,0 +1,14 @@
+language: php
+
+php:
+  - 7.0
+
+env:
+  global:
+    - DB_CONNECTION=sqlite
+
+install:
+    - composer install
+
+before_script:
+  - php artisan serve
