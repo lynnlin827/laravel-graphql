@@ -8,7 +8,10 @@ env:
     - DB_CONNECTION=sqlite
 
 install:
-    - composer install
+  - composer install
+  - npm install newman --global
 
-before_script:
-  - php artisan serve
+script:
+  - newman --version
+  - php artisan serve &
+  - sleep 5
