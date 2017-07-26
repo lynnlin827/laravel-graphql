@@ -18,7 +18,7 @@ before_install:
     fi
 
 install:
-  - composer install
+  - composer install --optimize-autoloader --quiet
   - yarn install --pure-lockfile
 
 before_script:
