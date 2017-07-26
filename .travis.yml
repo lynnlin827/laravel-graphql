@@ -39,4 +39,4 @@ cache:
     - $HOME/.yarn
     - node_modules
     - vendor
-    - $HOME/.composer/cache
+    - $HOME/.composer
