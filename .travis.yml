@@ -8,7 +8,7 @@ env:
     - DB_CONNECTION=sqlite
 
 install:
-  - composer install
+  - composer install --optimize-autoloader --quiet
   - npm install newman --global
 
 script:
