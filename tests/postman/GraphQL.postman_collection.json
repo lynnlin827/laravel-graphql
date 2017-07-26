@@ -1,0 +1,45 @@
+{
+	"variables": [],
+	"info": {
+		"name": "GraphQL",
+		"_postman_id": "2595ebdc-fdfc-1ecc-acf6-c4c6ecc82516",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Getting news",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"tests[\"object has key: news\"] = \"news\" in jsonData.data;",
+							"tests[\"object has key: newsId\"] = \"newsId\" in jsonData.data.news[0];",
+							"tests[\"object has key: title\"] = \"title\" in jsonData.data.news[0];"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://127.0.0.1:8000/graphql",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\": \"{ news { newsId, title} }\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

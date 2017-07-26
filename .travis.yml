@@ -15,3 +15,4 @@ script:
   - newman --version
   - php artisan serve &
   - sleep 5
+  - newman run tests/postman/GraphQL.postman_collection.json
