@@ -1,4 +1,4 @@
-[![Build Status](https://img.shields.io/travis/lynn80827/laravel-graphql/master.svg)](https://travis-ci.org/lynn80827/laravel-graphql) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](http://lynn.mit-license.org/)
+[![Build Status](https://img.shields.io/travis/lynn80827/laravel-graphql/master.svg?style=flat-square)](https://travis-ci.org/lynn80827/laravel-graphql) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](http://lynn.mit-license.org/)
 
 
 ## Installation
